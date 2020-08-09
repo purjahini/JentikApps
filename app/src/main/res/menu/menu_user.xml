@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+
+        android:title="Data Statistik"
+        android:id="@+id/MenuDataStatistik"
+        app:showAsAction="">
+
+    </item>
+
+    <item
+
+        android:title="Masukkan Data Jentik"
+        android:id="@+id/InputDataJentik"
+        app:showAsAction="">
+
+    </item>
+    <item
+        android:title="Tentang Kita"
+        android:id="@+id/menuAbout"
+        app:showAsAction="never">
+
+    </item>
+    <item
+        android:title="Keluar"
+        android:id="@+id/menuLogOut"
+        app:showAsAction="never">
+
+    </item>
+
+</menu>

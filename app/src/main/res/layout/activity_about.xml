@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:background="@drawable/gradient"
+    android:orientation="vertical"
+    tools:context=".About">
+
+    <TextView
+        android:id="@+id/TvKerjaSama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Jentik Apps tercipta berkat Kerjasama "
+        android:textColor="@android:color/black"
+        android:textSize="14dp"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/IvLogoUpgris"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/TvKerjaSama"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:src="@drawable/logo" />
+
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/IvLogoUpgris"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/upgrislogo" />
+
+</RelativeLayout>

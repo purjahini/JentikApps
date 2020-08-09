@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/gradient"
+        android:orientation="vertical"
+        tools:context=".Dashboard">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Selamat Datang di Jentik Apps"
+            android:textColor="@android:color/black"
+            android:textSize="20dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jentik Apps merupakan aplikasi pencegahan Dini Penyakit Demam Berdarah"
+            android:textSize="14dp">
+
+        </TextView>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-250dp"
+            android:src="@drawable/postertigam">
+
+        </ImageView>
+
+
+    </LinearLayout>
+
+</ScrollView>

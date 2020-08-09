@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:background="@drawable/gradient">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical"
+        tools:context=".InputJentik">
+
+        <EditText
+            android:id="@+id/EdName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imPosyandu"
+            android:layout_marginTop="10dp"
+            android:hint="Masukan nama "
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/EdAlamat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/EdUsername"
+            android:hint="Alamat"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/EdRt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imPosyandu"
+            android:hint="Rt"
+            android:inputType="number"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/EdRw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/EdUsername"
+            android:hint="Rw"
+            android:inputType="number"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. Apakah ada jentik di Bak Mandi ?"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/TvYaJentikBakMandi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:visibility="gone" />
+
+            <RadioButton
+                android:id="@+id/RbYaBakMandi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ya, Ada Jentik" />
+
+            <RadioButton
+                android:id="@+id/RbNoBakMandi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tidak, Jentik Nihil" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2. Apakah ada jentik di Penampungan air ?"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/TvYaJentikTampung"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:visibility="gone" />
+
+            <RadioButton
+                android:id="@+id/RbYaJentikTampung"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ya, Ada Jentik" />
+
+            <RadioButton
+                android:id="@+id/RbNoJentikTampung"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tidak, Jentik Nihil" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3. Apakah ada jentik di Saluran irigasi ?"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/TvYaJentikIrigasi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:visibility="gone" />
+
+            <RadioButton
+                android:id="@+id/RbYaJentikIrigasi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ya, Ada Jentik" />
+
+            <RadioButton
+                android:id="@+id/RbNoJentikIrigasi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tidak, Jentik Nihil" />
+        </RadioGroup>
+
+
+        <Button
+            android:id="@+id/BtnInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/EdPassword"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:background="@color/colorPrimary"
+            android:text="KIrim"
+            android:textColor="@android:color/white"
+            android:textSize="14dp" />
+
+
+    </LinearLayout>
+</ScrollView>
