@@ -3,4 +3,11 @@
     <color name="colorPrimary">#D13434</color>
     <color name="colorPrimaryDark">#C23333</color>
     <color name="colorAccent">#CA3333</color>
+    <color name="hijau">#07F63B</color>
+    <color name="kuning">#E6A80C</color>
+    <color name="biru">#220CE6</color>
+    <color name="merah">#F60707</color>
+    <color name="hitam">#020202</color>
+
+
 </resources>

@@ -2,6 +2,8 @@ package net.bedev.jentikapps
 
 import android.content.Context
 import android.os.Bundle
+import android.widget.ArrayAdapter
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_input_jentik.*
 import net.bedev.jentikapps.helper.Cons
@@ -28,6 +30,9 @@ class InputJentik : AppCompatActivity() {
 
         BtnInput.setOnClickListener {
 
+
+//            Toast.makeText(this, "nama dusun ${dusun}, nama Rt $rt , nama Rw $rw ", Toast.LENGTH_SHORT).show()
+
             ProsesCeklist()
 
         }
@@ -37,8 +42,13 @@ class InputJentik : AppCompatActivity() {
 
         val nama = EdName.text.toString()
         val alamat = EdAlamat.text.toString()
-        val rt = EdRt.text.toString()
-        val rw = EdRw.text.toString()
+//        val rt = EdRt.text.toString()
+//        val rw = EdRw.text.toString()
+
+        val dusun = SpDusun.selectedItem.toString()
+        val rt = SpRt.selectedItem.toString()
+        val rw = SpRW.selectedItem.toString()
+
 
         if (RbYaBakMandi.isChecked) {
 
@@ -52,6 +62,10 @@ class InputJentik : AppCompatActivity() {
             TvYaJentikTampung.text = ValueYa.toString()
 
         }
+        if (RbYaTempatSampah.isChecked) {
+            TvYaTempatSampah.text = ValueYa.toString()
+
+        }
 
         if (nama.isEmpty()) {
             EdName.error = "Harus di isi"
@@ -61,24 +75,26 @@ class InputJentik : AppCompatActivity() {
             EdAlamat.error = "Harus di isi"
             return
         }
-        if (rt.isEmpty()) {
-            EdRt.error = "Harus di isi"
-            return
-        }
-        if (rw.isEmpty()) {
-            EdRw.error = "Harus di isi"
-            return
-        }
+//        if (rt.isEmpty()) {
+//            EdRt.error = "Harus di isi"
+//            return
+//        }
+//        if (rw.isEmpty()) {
+//            EdRw.error = "Harus di isi"
+//            return
+//        }
 
         val apiService = ApiConfig.getApiService()
         apiService.CreateJentik(
             EdName.text.toString().trim(),
             EdAlamat.text.toString().trim(),
-            EdRt.text.toString().trim(),
-            EdRw.text.toString().trim(),
+            dusun.trim(),
+            rt.trim(),
+            rw.trim(),
             TvYaJentikBakMandi.text.toString().trim(),
             TvYaJentikTampung.text.toString().trim(),
             TvYaJentikIrigasi.text.toString().trim(),
+            TvYaTempatSampah.text.toString().trim(),
             id_kader
         )
             .enqueue(object : Callback<ResponseBody> {
@@ -101,14 +117,16 @@ class InputJentik : AppCompatActivity() {
 
                         EdName.setText("")
                         EdAlamat.setText("")
-                        EdRt.setText("")
-                        EdRw.setText("")
+//                        EdRt.setText("")
+//                        EdRw.setText("")
                         RbYaBakMandi.isChecked = false
                         RbNoBakMandi.isChecked = false
                         RbNoJentikIrigasi.isChecked = false
                         RbYaJentikIrigasi.isChecked = false
                         RbYaJentikTampung.isChecked = false
                         RbNoJentikTampung.isChecked = false
+                        RbYaTempatSampah.isChecked = false
+                        RbNoTempatSampah.isChecked = false
 
 
                     } else {

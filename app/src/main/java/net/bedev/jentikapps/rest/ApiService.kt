@@ -21,11 +21,13 @@ interface ApiService {
     fun CreateJentik(
         @Field("nama_lengkap") nama_lengkap: String,
         @Field("alamat") alamat: String,
+        @Field("dusun") dusun: String,
         @Field("rt") rt: String,
         @Field("rw") rw: String,
         @Field("bak_mandi") bak_mandi: String,
         @Field("penampungan_air") penampungan_air: String,
         @Field("saluran_irigasi") saluran_irigasi: String,
+        @Field("tempat_sampah") tempat_sampah: String,
         @Field("id_kader") id_kader: String
 
     ): Call<ResponseBody>

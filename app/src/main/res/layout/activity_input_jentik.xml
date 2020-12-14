@@ -33,18 +33,58 @@
             android:textSize="14dp"
             android:textStyle="bold" />
 
+
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Pilihdusun"/>
+        <Spinner
+            android:layout_marginBottom="5dp"
+            android:entries="@array/dusun"
+            android:id="@+id/SpDusun"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/PilihRt"/>
+        <Spinner
+            android:layout_marginBottom="5dp"
+            android:entries="@array/rt"
+            android:id="@+id/SpRt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/PilihRw"/>
+        <Spinner
+            android:layout_marginBottom="5dp"
+            android:entries="@array/rw"
+            android:id="@+id/SpRW"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
         <EditText
             android:id="@+id/EdRt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/imPosyandu"
             android:hint="Rt"
+            android:visibility="gone"
             android:inputType="number"
             android:textSize="14dp"
             android:textStyle="bold" />
 
         <EditText
             android:id="@+id/EdRw"
+            android:visibility="gone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/EdUsername"
@@ -130,6 +170,37 @@
             android:layout_height="wrap_content">
 
             <TextView
+                android:id="@+id/TvYaTempatSampah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:visibility="gone" />
+
+            <RadioButton
+                android:id="@+id/RbYaTempatSampah"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ya, Ada Jentik" />
+
+            <RadioButton
+                android:id="@+id/RbNoTempatSampah"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tidak, Jentik Nihil" />
+        </RadioGroup>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4. Apakah ada jentik di Tempat Sampah ?"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
                 android:id="@+id/TvYaJentikIrigasi"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -158,6 +229,7 @@
             android:layout_centerHorizontal="true"
             android:layout_marginLeft="30dp"
             android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
             android:layout_marginRight="30dp"
             android:background="@color/colorPrimary"
             android:text="KIrim"
