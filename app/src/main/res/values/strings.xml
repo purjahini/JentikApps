@@ -3,17 +3,16 @@
     <string name="Pilihdusun">Pilih Dusun</string>
     <string name="PilihRt">Pilih Rt</string>
     <string name="PilihRw">Pilih  Rw</string>
+    <string name="Desa">Desa</string>
     <string-array name="dusun">
-        <item>Dusun</item>
+        <item>Krajan</item>
     </string-array>
     <string-array name="rw">
-        <item>001</item>
         <item>002</item>
-        <item>003</item>
     </string-array>
     <string-array name="rt">
-        <item>001</item>
         <item>002</item>
         <item>003</item>
+        <item>004</item>
     </string-array>
 </resources>

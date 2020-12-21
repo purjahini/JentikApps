@@ -47,21 +47,9 @@
 
                     />
 
-                <TextView
-                    android:id="@+id/TvAlamat"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:paddingStart="4dp"
-                    android:paddingLeft="4dp"
-                    android:paddingBottom="4dp" />
 
-                <TextView
-                    android:id="@+id/TvDusun"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:paddingStart="4dp"
-                    android:paddingLeft="4dp"
-                    android:paddingBottom="4dp" />
+
+
 
                 <TextView
                     android:id="@+id/TvRt"
@@ -73,6 +61,21 @@
 
                 <TextView
                     android:id="@+id/TvRw"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="4dp"
+                    android:paddingLeft="4dp"
+                    android:paddingBottom="4dp" />
+                <TextView
+                    android:id="@+id/TvDusun"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="4dp"
+                    android:paddingLeft="4dp"
+                    android:paddingBottom="4dp" />
+
+                <TextView
+                    android:id="@+id/TvAlamat"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingStart="4dp"

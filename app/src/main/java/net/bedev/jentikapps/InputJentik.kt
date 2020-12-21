@@ -41,7 +41,7 @@ class InputJentik : AppCompatActivity() {
     private fun ProsesCeklist() {
 
         val nama = EdName.text.toString()
-        val alamat = EdAlamat.text.toString()
+        val alamat = EdAlamat.text.toString().trim()
 //        val rt = EdRt.text.toString()
 //        val rw = EdRw.text.toString()
 
@@ -71,10 +71,7 @@ class InputJentik : AppCompatActivity() {
             EdName.error = "Harus di isi"
             return
         }
-        if (alamat.isEmpty()) {
-            EdAlamat.error = "Harus di isi"
-            return
-        }
+
 //        if (rt.isEmpty()) {
 //            EdRt.error = "Harus di isi"
 //            return
@@ -87,7 +84,7 @@ class InputJentik : AppCompatActivity() {
         val apiService = ApiConfig.getApiService()
         apiService.CreateJentik(
             EdName.text.toString().trim(),
-            EdAlamat.text.toString().trim(),
+            alamat,
             dusun.trim(),
             rt.trim(),
             rw.trim(),
@@ -116,7 +113,7 @@ class InputJentik : AppCompatActivity() {
                         See.toast(this@InputJentik, "Input Data Jentik Berhasil")
 
                         EdName.setText("")
-                        EdAlamat.setText("")
+
 //                        EdRt.setText("")
 //                        EdRw.setText("")
                         RbYaBakMandi.isChecked = false
