@@ -136,4 +136,9 @@ class InputJentik : AppCompatActivity() {
             })
     }
 
+    override fun onBackPressed() {
+
+       // super.onBackPressed()
+    }
+
 }

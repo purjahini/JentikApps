@@ -64,14 +64,16 @@ android:inputType="textVisiblePassword"
     </ProgressBar>
 
     <TextView
+        android:visibility="gone"
         android:id="@+id/TvVersion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/Btnlogin"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:textSize="14dp"
         android:layout_marginBottom="30dp"
-        android:text="Jentik Apps ver. 1.1"
+        android:text="Jentik Apps ver. 1.2"
         android:textColor="@android:color/white"
         android:textStyle="bold" />
 
