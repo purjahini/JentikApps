@@ -56,13 +56,18 @@ class Dashboard : AppCompatActivity() {
             return true
         }
 
+        if (id == R.id.DataWilayahABJ){
+            val intent = Intent(this, AbJentikActivity::class.java)
+//            intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK.or(Intent.FLAG_ACTIVITY_NEW_TASK)
+            startActivity(intent)
+            return true
+        }
+
         if (id == R.id.menuAbout) {
 
             val intent = Intent(this, About::class.java)
 //            intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK.or(Intent.FLAG_ACTIVITY_NEW_TASK)
             startActivity(intent)
-
-
 
 
             return true

@@ -17,6 +17,12 @@ interface ApiService {
     ): Call<ResponseBody>
 
     @FormUrlEncoded
+    @POST("getabj.php")
+    fun GetAbj(
+        @Field("rt") rt:String
+    ) : Call<ResponseBody>
+
+    @FormUrlEncoded
     @POST("create_jentik.php")
     fun CreateJentik(
         @Field("nama_lengkap") nama_lengkap: String,

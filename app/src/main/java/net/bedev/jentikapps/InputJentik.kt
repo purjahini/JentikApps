@@ -97,7 +97,7 @@ class InputJentik : AppCompatActivity() {
             .enqueue(object : Callback<ResponseBody> {
                 override fun onFailure(call: Call<ResponseBody>, t: Throwable) {
                     See.log("onFailure")
-                    See.toast(this@InputJentik, "Cek Koneksi Intennet anda")
+                    See.toast(this@InputJentik, "Cek Koneksi Internet anda")
 
                 }
 
