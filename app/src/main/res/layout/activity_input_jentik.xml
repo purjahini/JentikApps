@@ -165,7 +165,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="3. Apakah ada jentik di Saluran irigasi ?"
+            android:text="3. Apakah ada jentik di Tempat Sampah ?"
             android:textColor="@android:color/black"
             android:textStyle="bold" />
 
@@ -196,7 +196,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="4. Apakah ada jentik di Tempat Sampah ?"
+            android:text="4. Apakah ada jentik di Saluran Irigasi ?"
             android:textColor="@android:color/black"
             android:textStyle="bold" />
 
@@ -220,6 +220,226 @@
 
             <RadioButton
                 android:id="@+id/RbNoJentikIrigasi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tidak, Jentik Nihil" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5. Apakah ada jentik di Tempayan ?"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/TvYaTempayan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:visibility="gone" />
+
+            <RadioButton
+                android:id="@+id/RbYaTempayan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ya, Ada Jentik" />
+
+            <RadioButton
+                android:id="@+id/RbNoTempayan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tidak, Jentik Nihil" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6. Apakah ada jentik di Pecahan Botol ?"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/TvYaPecahanBotol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:visibility="gone" />
+
+            <RadioButton
+                android:id="@+id/RbYaPecahanBotol"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ya, Ada Jentik" />
+
+            <RadioButton
+                android:id="@+id/RbNoPecahanBotol"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tidak, Jentik Nihil" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7. Apakah ada jentik di Kulkas ?"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/TvYaKulkas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:visibility="gone" />
+
+            <RadioButton
+                android:id="@+id/RbYaKulkas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ya, Ada Jentik" />
+
+            <RadioButton
+                android:id="@+id/RbNoKulkas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tidak, Jentik Nihil" />
+        </RadioGroup>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8. Apakah ada jentik di Dispenser ?"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/TvYaDispenser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:visibility="gone" />
+
+            <RadioButton
+                android:id="@+id/RbYaDispenser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ya, Ada Jentik" />
+
+            <RadioButton
+                android:id="@+id/RbNoDispenser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tidak, Jentik Nihil" />
+        </RadioGroup>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9. Apakah ada jentik di Tandon Air ?"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/TvYaTandonAir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:visibility="gone" />
+
+            <RadioButton
+                android:id="@+id/RbYaTandonAir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ya, Ada Jentik" />
+
+            <RadioButton
+                android:id="@+id/RbNoTandonAir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tidak, Jentik Nihil" />
+        </RadioGroup>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10. Apakah ada jentik di Vas Bunga ?"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/TvYaVasBunga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:visibility="gone" />
+
+            <RadioButton
+                android:id="@+id/RbYaVasBunga"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ya, Ada Jentik" />
+
+            <RadioButton
+                android:id="@+id/RbNoVasBunga"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tidak, Jentik Nihil" />
+        </RadioGroup>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11. Apakah ada jentik di Pot Bunga ?"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/TvYaPotBunga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:visibility="gone" />
+
+            <RadioButton
+                android:id="@+id/RbYaPotBunga"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ya, Ada Jentik" />
+
+            <RadioButton
+                android:id="@+id/RbNoPotBunga"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Tidak, Jentik Nihil" />

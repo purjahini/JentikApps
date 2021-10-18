@@ -1,6 +1,7 @@
 package net.bedev.jentikapps
 
 import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import android.widget.ArrayAdapter
 import android.widget.Toast
@@ -51,21 +52,41 @@ class InputJentik : AppCompatActivity() {
 
 
         if (RbYaBakMandi.isChecked) {
-
             TvYaJentikBakMandi.text = ValueYa.toString()
         }
         if (RbYaJentikIrigasi.isChecked) {
             TvYaJentikIrigasi.text = ValueYa.toString()
-
         }
         if (RbYaJentikTampung.isChecked) {
             TvYaJentikTampung.text = ValueYa.toString()
-
         }
         if (RbYaTempatSampah.isChecked) {
             TvYaTempatSampah.text = ValueYa.toString()
-
         }
+        if (RbYaTempayan.isChecked) {
+            TvYaTempayan.text = ValueYa.toString()
+        }
+        if (RbYaPecahanBotol.isChecked) {
+            TvYaPecahanBotol.text = ValueYa.toString()
+        }
+        if (RbYaKulkas.isChecked) {
+            TvYaKulkas.text = ValueYa.toString()
+        }
+        if (RbYaDispenser.isChecked) {
+            TvYaDispenser.text = ValueYa.toString()
+        }
+        if (RbYaTandonAir.isChecked) {
+            TvYaTandonAir.text = ValueYa.toString()
+        }
+        if (RbYaVasBunga.isChecked) {
+            TvYaVasBunga.text = ValueYa.toString()
+        }
+        if (RbYaPotBunga.isChecked) {
+            TvYaPotBunga.text = ValueYa.toString()
+        }
+
+
+
 
         if (nama.isEmpty()) {
             EdName.error = "Harus di isi"
@@ -92,6 +113,13 @@ class InputJentik : AppCompatActivity() {
             TvYaJentikTampung.text.toString().trim(),
             TvYaJentikIrigasi.text.toString().trim(),
             TvYaTempatSampah.text.toString().trim(),
+            TvYaTempayan.text.toString().trim(),
+            TvYaPecahanBotol.text.toString().trim(),
+            TvYaKulkas.text.toString().trim(),
+            TvYaDispenser.text.toString().trim(),
+            TvYaTandonAir.text.toString().trim(),
+            TvYaVasBunga.text.toString().trim(),
+            TvYaPotBunga.text.toString().trim(),
             id_kader
         )
             .enqueue(object : Callback<ResponseBody> {
@@ -112,19 +140,36 @@ class InputJentik : AppCompatActivity() {
                     if (apiStatus == 1) {
                         See.toast(this@InputJentik, "Input Data Jentik Berhasil")
 
-                        EdName.setText("")
+                        val intent = Intent(this@InputJentik, Dashboard::class.java)
+                        intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP
+                        startActivity(intent)
 
-//                        EdRt.setText("")
-//                        EdRw.setText("")
-                        RbYaBakMandi.isChecked = false
-                        RbNoBakMandi.isChecked = false
-                        RbNoJentikIrigasi.isChecked = false
-                        RbYaJentikIrigasi.isChecked = false
-                        RbYaJentikTampung.isChecked = false
-                        RbNoJentikTampung.isChecked = false
-                        RbYaTempatSampah.isChecked = false
-                        RbNoTempatSampah.isChecked = false
-
+//                        EdName.setText("")
+//
+////                        EdRt.setText("")
+////                        EdRw.setText("")
+//                        RbYaBakMandi.isChecked = false
+//                        RbNoBakMandi.isChecked = false
+//                        RbNoJentikIrigasi.isChecked = false
+//                        RbYaJentikIrigasi.isChecked = false
+//                        RbYaJentikTampung.isChecked = false
+//                        RbNoJentikTampung.isChecked = false
+//                        RbYaTempatSampah.isChecked = false
+//                        RbNoTempatSampah.isChecked = false
+//                        RbYaTempayan.isChecked = false
+//                        RbNoTempayan.isChecked= false
+//                        RbYaPecahanBotol.isChecked = false
+//                        RbNoPecahanBotol.isChecked= false
+//                        RbYaKulkas.isChecked = false
+//                        RbNoKulkas.isChecked = false
+//                        RbYaDispenser.isChecked = false
+//                        RbNoDispenser.isChecked = false
+//                        RbYaTandonAir.isChecked = false
+//                        RbNoTandonAir.isChecked = false
+//                        RbYaVasBunga.isChecked = false
+//                        RbNoVasBunga.isChecked = false
+//                        RbYaPotBunga.isChecked = false
+//                        RbNoPotBunga.isChecked = false
 
                     } else {
                         See.toast(this@InputJentik, "Input Data Jentik Gagal")

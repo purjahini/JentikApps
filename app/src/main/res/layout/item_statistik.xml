@@ -113,8 +113,59 @@
                     android:paddingStart="4dp"
                     android:paddingLeft="4dp"
                     android:paddingBottom="4dp" />
+                <TextView
+                    android:id="@+id/Tvtempayan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="4dp"
+                    android:paddingLeft="4dp"
+                    android:paddingBottom="4dp" />
+                <TextView
+                    android:id="@+id/Tvpecahanbotol"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="4dp"
+                    android:paddingLeft="4dp"
+                    android:paddingBottom="4dp" />
+                <TextView
+                    android:id="@+id/Tvkulkas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="4dp"
+                    android:paddingLeft="4dp"
+                    android:paddingBottom="4dp" />
+                <TextView
+                    android:id="@+id/Tvdispenser"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="4dp"
+                    android:paddingLeft="4dp"
+                    android:paddingBottom="4dp" />
+                <TextView
+                    android:id="@+id/Tvtandonair"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="4dp"
+                    android:paddingLeft="4dp"
+                    android:paddingBottom="4dp" />
+                <TextView
+                    android:id="@+id/Tvvasbunga"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="4dp"
+                    android:paddingLeft="4dp"
+                    android:paddingBottom="4dp" />
+                <TextView
+                    android:id="@+id/Tvpotbunga"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="4dp"
+                    android:paddingLeft="4dp"
+                    android:paddingBottom="4dp" />
+
 
                 <TextView
+                    android:visibility="gone"
                     android:id="@+id/TvResult"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -122,6 +173,23 @@
                     android:paddingLeft="4dp"
                     android:paddingBottom="4dp"
                     android:textStyle="bold" />
+                <ProgressBar
+                    android:id="@+id/pbDetail"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </ProgressBar>
+                <Button
+                    android:id="@+id/btnHapus"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/merah"
+                    android:text="@string/hapus"
+                    android:layout_gravity="right"
+                    android:textColor="@android:color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
             </LinearLayout>
 
         </LinearLayout>

@@ -1,6 +1,6 @@
 package net.bedev.jentikapps.rest
 
-import net.bedev.jentikapps.model.get_jentik
+
 import okhttp3.ResponseBody
 import retrofit2.Call
 import retrofit2.http.Field
@@ -19,7 +19,9 @@ interface ApiService {
     @FormUrlEncoded
     @POST("getabj.php")
     fun GetAbj(
-        @Field("rt") rt:String
+        @Field("rt") rt:String,
+        @Field("rw") rw:String
+
     ) : Call<ResponseBody>
 
     @FormUrlEncoded
@@ -34,6 +36,13 @@ interface ApiService {
         @Field("penampungan_air") penampungan_air: String,
         @Field("saluran_irigasi") saluran_irigasi: String,
         @Field("tempat_sampah") tempat_sampah: String,
+        @Field("pecahan_botol") pecahan_botol: String,
+        @Field("tempayan") tempayan: String,
+        @Field("kulkas") kulkas: String,
+        @Field("dispenser") dispenser: String,
+        @Field("tandon_air") tandon_air: String,
+        @Field("vas_bunga") vas_bunga: String,
+        @Field("pot_bunga") pot_bunga: String,
         @Field("id_kader") id_kader: String
 
     ): Call<ResponseBody>

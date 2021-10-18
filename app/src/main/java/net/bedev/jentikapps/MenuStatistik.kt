@@ -11,7 +11,7 @@ import kotlinx.android.synthetic.main.activity_menu_statistik.*
 import net.bedev.jentikapps.adapter.StatistikAdapter
 import net.bedev.jentikapps.helper.Cons
 import net.bedev.jentikapps.helper.See
-import net.bedev.jentikapps.model.get_jentik
+import net.bedev.jentikapps.model.get_jentiks
 import net.bedev.jentikapps.rest.ApiConfig
 import okhttp3.ResponseBody
 import org.json.JSONObject
@@ -52,7 +52,7 @@ class MenuStatistik : AppCompatActivity() {
                     val apiStatus = json.getInt(Cons.api_status)
 
                     if (apiStatus == 1 ){
-                        var data =Gson().fromJson(respon, get_jentik::class.java)
+                        var data =Gson().fromJson(respon, get_jentiks::class.java)
                         val list = data.data
 
                         PbLoadingStatistik.visibility = View.GONE
